@@ -1,5 +1,5 @@
 // Useful snippets
-// Use of JDialog
+// Use of JDialog with HTML
 // Cross test-case extraction of values
 // Dynamic calling of service (teststep) to get information/results
 //
@@ -54,7 +54,6 @@ for(o in oList) {
 	catch(Exception e) {log.warn(e.toString());}
 
 	if(json && json.id != null && json.id != "") {
-		//log.info(json.id + " " + json.transaksjon);
 		html += "<tr>${json.id}<td>${json.transaksjon.registrert}</td><td>${json.transaksjon.status}</td></tr>";
 	}
 	if(maxQuery-- == 0)
